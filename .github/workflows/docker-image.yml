@@ -28,7 +28,9 @@ jobs:
     - name: Build Docker image
       run: |
         docker build -t varelajuan860/docker-graphql:0.0.2 .
+        docker build -t varelajuan860/docker-graphql:latest .
 
     - name: Push Docker Image
       run: |
         docker push varelajuan860/docker-graphql:0.0.2
+        docker push varelajuan860/docker-graphql:latest
